@@ -1,0 +1,636 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>�ͻ����ͯز� 9����΢��֤�����(ͼ)-���/title>
+<script src="http://www.sohu.com/sohuflash_1.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="http://css.sohu.com/upload/global1.3.css" />
+<style>
+body{background:#E7F0F7}
+em{font-style:normal}
+.line,.top,.bot{height:1px;font-size:0px;margin:0 auto;clear:both;overflow:hidden}
+.c{float:left;display:inline}
+
+a{color:#105990}
+.area{width:980px}
+
+#headers .fun li,#headers .fun li a,.fontSize span,.share span,#headers .fun li .seleBtn,#headers .fun li .seleOvr{background:url(http://roll.sohu.com/upload/qing20110902/icon.gif) no-repeat}
+
+.fontSize .fsLay,.comLink a,.shareLink a,#main .right .angle,.shareLay .top,.shareLay .bot{background:url(http://roll.sohu.com/upload/qing20110902/nobg01.gif) no-repeat}
+
+#headers{margin:26px auto 17px;color:#999;text-align:left;}
+#headers .title{float:left;display:inline;margin-left:123px}
+#headers h1{font:26px/38px "΢����;color:#000;height:38px;max-width:695px;_width:695px;overflow:hidden;}
+
+#headers .fun{float:left;margin:16px 0 0 15px;display:inline;line-height:14px}
+#headers .fun li{float:left;height:13px;padding:0 10px 0 8px;background-position:0 -140px}
+#headers .fun li a{display:block;text-align:left}
+#headers .fun li .seleBtn{cursor:pointer;width:11px;height:11px;margin:2px 0 0 2px;background-position:0 -40px;font-size:0}
+#headers .fun li .seleOvr{background-position:0 -60px}
+
+#headers .fun .share{position:relative;z-index:20;background:none;padding-left:0}
+#headers .fun .share span{float:left;display:inline;font-size:0}
+#headers .fun .share .shareBG{cursor:pointer;width:10px;height:13px;background-position:0 -160px}
+
+.shareLink .kj,#headers .fun .shareLay span{background:url(http://comment.news.sohu.com/upload/qingsohu/images/share1.gif) no-repeat}
+
+#headers .fun .shareLay{position:absolute;top:20px;left:-22px;width:85px;}
+#headers .fun .shareLay p{border-left:1px #A0CEE5 solid;border-right:1px #A0CEE5 solid;background:#FFF;width:83px}
+#headers .fun .shareLay a{display:block;height:19px;padding:4px 0 0;line-height:18px;background:#FFF;text-decoration:none}
+#headers .fun .shareLay a:hover{background:#E7F0F7;color:#105990}
+#headers .fun .shareLay span{float:left;width:16px;height:16px;display:inline;margin:0 8px 0 5px}
+#headers .fun .shareLay .top{height:7px;background-position:0 -100px}
+#headers .fun .shareLay .bot{height:2px;background-position:0 -110px}
+
+#headers .fun .shareLay .kj{background-position:0 0}
+#headers .fun .shareLay .blg{background-position:0 -20px}
+#headers .fun .shareLay .bsh{background-position:0 -60px}
+#headers .fun .shareLay .itb{background-position:0 -140px}
+#headers .fun .shareLay .kxw{background-position:0 -80px}
+#headers .fun .shareLay .rrw{background-position:0 -100px}
+#headers .fun .shareLay .db{background-position:0 -120px}
+#headers .fun .shareLay .go139{background-position:0 -160px}
+#headers .fun .shareLay .qq{background-position:0 -40px}
+
+#headers .fun .copylink{height:13px;overflow:hidden;}
+#headers .fun .copylink a{width:12px;height:13px;overflow:hidden;background-position:0 0;line-height:500px;font-size:0}
+#headers .fun .print{height:13px;overflow:hidden;}
+#headers .fun .print a{width:14px;height:13px;overflow:hidden;background-position:0 -20px;line-height:500px;font-size:0}
+
+#headers .fun .fontSize{z-index:20;position:relative}
+#headers .fun .fontSize span{float:left;display:inline;font-size:0}
+#headers .fun .fontSize .fszt{width:13px;height:12px;margin-top:1px;cursor:pointer;}
+#headers .fun .fontSize .fsS{background-position:0 -80px}/* С */
+#headers .fun .fontSize .fsC{background-position:0 -100px}/* � */
+#headers .fun .fontSize .fsB{background-position:0 -120px}/* ��
+
+#headers .fun .fontSize .fsLay{position:absolute;top:20px;left:8px;width:40px;height:71px;padding:7px 1px 0;background-position:-70px 0}
+#headers .fun .fontSize .fsLay a{display:block;height:20px;padding:3px 0 0;background:#FFF;line-height:20px;text-align:center;text-decoration:none}
+#headers .fun .fontSize .fsLay a:hover{background:#E7F0F7;color:#105990}
+
+#headers .timeTag{padding-left:123px;line-height:20px}
+
+/* main */
+#main .right,#main .right .top,#main .right .bot{background:url(http://roll.sohu.com/upload/qing20110902/bgy.gif)}
+#main{margin:0 auto 10px}
+#main .left{width:75px;position:relative;}
+#main .right{width:890px;background-position:0 0}
+
+.follow a{margin:0 auto;display:block;width:61px;height:20px;background:url(http://roll.sohu.com/upload/qing20110902/follow.gif);overflow:hidden;line-height:500px}
+.follow a:hover{background-position:0 -30px}
+.follow a:active{background-position:0 -60px}
+
+.mediaSource{margin:2px auto 20px}
+.mediaSource .mediaPic span{display:block;margin:4px auto 0;line-height:18px}
+
+.editer .editerPic div{margin:0 auto;height:55px;width:55px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;z-index:5;overflow:hidden}
+.editer .editerPic div img{height:55px;width:55px}
+.editer .editerPic span{display:block;margin:4px auto 0;line-height:18px}
+
+#main .right .angle{position: absolute;top: 33px;left: -7px;width: 9px;height: 15px;background-position: -70px -80px}
+#main .right .top{position: relative;height: 7px;margin: 0 auto 15px;background-position: -900px 0;overflow: visible}
+#main .right .bot{height:7px;background-position:-1800px 0}
+#main .right .mainCont{width:615px;float:left;margin-left:25px;display:inline}
+#main .right .mainAD{width:200px;float:right;margin-right:15px;display:inline}
+
+#main .text{margin:0 auto 20px;text-align:left;line-height:24px;font-size:14px;color:#333}
+#main .text p{padding:24px 0 0}
+#main .text .textPic{margin:0 auto 10px;text-align:center}
+#main .text .textPic span{display:block;padding:4px 0 0;font:12px/20px "��"}
+
+.ad200 div{padding:0 0 10px}
+
+/* ad 890x100 */
+.ad890{margin:5px auto 0;height:100px;text-align:right;}
+.ad890 div{padding-left:90px;}
+
+#foot{border:0;width:950px;margin:0 auto 10px}
+#foot a{color:#333}
+
+#rollSide{position:absolute;width:75px;left:0;}
+
+.comLink{margin:0 auto 0;line-height:18px}
+.comLink a{display:block;width:61px;height:39px;padding:3px 3px 0 0;margin:0 auto 0 7px;background-position:0 0;text-decoration:none}
+.comLink a:hover{background-position:0 -50px}
+.comLink a strong{display:block;margin:0 auto 2px;color:#B00}
+
+.shareLink{margin:19px auto 0;line-height:18px;text-align:left}
+.shareLink a{display:block;width:61px;height:39px;padding:3px 3px 0 0;margin:0 auto 0 7px;background-position:0 0;text-decoration:none}
+.shareLink a:hover{background-position:0 -50px}
+.shareLink a strong{display:block;margin:0 auto 2px;color:#B00;text-align:center}
+.shareLink .kj{display:block;float:left;display:inline;margin:0 2px 0 8px;width:16px;height:16px;background-position:0 0}
+#recommend_follower .per-con p{
+	padding:5px 0px;
+}  
+.com-follow a {
+    background-position: 0 0;
+    display: block;
+    height: 20px;
+    line-height: 500px;
+    overflow: hidden;
+    width: 60px;
+}
+
+.com-follow a, .com-follow-over a, .com-follow-each a {
+    background: url("http://s3.suc.itc.cn/i/comment/d/com_follow.gif") no-repeat scroll 0 0 transparent;
+    margin:auto;
+}
+.com-follow a.bC {
+    background-position: 0 -130px;
+    display: block;
+    height: 20px;
+    line-height: 500px;
+    overflow: hidden;
+    width: 60px;
+}
+#recommend_follower .per-pic{margin:0 auto;height:75px;width:75px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;z-index:5;overflow:hidden}
+#recommend_follower .per-pic img{height:75px;width:75px}
+#SOHUcommentTitle .reTitle{
+	text-align:left;
+	padding-bottom:8px;
+}
+#SOHUcommentTitle .reTitle .tt {
+    font-size: 14px;
+}
+#SOHUcommentTitle .reTitle .tt {
+    color: #333333;
+}
+#SOHUcommentTitle .red {
+    color: #CC0000;
+} 
+#recommend_follower .com-follow{
+		display:none;
+} 
+
+</style>
+<script type="text/javascript" src="http://js.sohu.com/library/jquery1.4.2.js"></script>
+<script type="text/javascript" src="http://js.sohu.com/library/base64.min.js"></script>
+<script type="text/javascript">
+var passport_isohu='iqianhuawang@sohu.com';//����ٵģ����������1012
+var topicId="332312128";
+var topicTitle = '�ͻ����ͯز� 9����΢��֤�����(ͼ)';
+
+
+var topicSummary = '������ķ?��¹����ͼ�������ר�壺�ݡ���籨��1�15�������ͻ�Ů��������ķ?��¹����Arfa KarimRandhawa��9�ʱ�����ı���λ�����΢��֤�������MCP����Ȼ��Ӣ�ţ����16������������ȥ';
+var topicUrl = 'http://roll.sohu.com/20120116/n332312128.shtml';
+function showLayer(sele, lay){
+	var layer = jQuery("#"+lay);
+	var sele = jQuery("#"+sele);
+	var layerShow = false;
+	if(layer.display == "none"){
+		layer.addClass("hidden");
+		sele.removeClass("seleOvr");
+	}else{
+		layer.removeClass("hidden");
+		sele.addClass("seleOvr");
+	}
+	sele.mouseout(function(event){
+		window.setTimeout(function(){			
+			if(!layerShow){
+				layer.addClass("hidden");
+				sele.removeClass("seleOvr");
+			}	
+		},1000)		
+	})
+	layer.hover(function(){	
+		layerShow = true;		
+		layer.removeClass("hidden");
+	},function(){	
+		layerShow = false;	
+		layer.addClass("hidden");
+		sele.removeClass("seleOvr");
+	})	
+}
+function isContains(containerNode, node){
+	while (node) {
+		if (containerNode == node) {
+			return true;
+		}
+		try {
+			node = node.parentNode;
+		} 
+		catch (e) {
+			return false;
+		}
+	}
+	return false;
+}
+//ת�����
+function doZoom(size){	
+	jQuery("#contentText").css("fontSize",size);
+}
+function getCookie(c_name)
+{
+var i,x,y,ARRcookies=document.cookie.split(";");
+for (i=0;i<ARRcookies.length;i++)
+{
+  x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+  y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+  x=x.replace(/^\s+|\s+$/g,"");
+  if (x==c_name)
+    {
+    return unescape(y);
+    }
+  }
+}
+//ý��Դ
+function media_span_url(id_media_span_url) {
+   // if(id_media_span_url) {
+   //     id_media_span = $('media_span');
+   //     if(!id_media_span.getElementsByTagName('a').length) {
+   //         id_media_span.innerHTML = '<a href=\'' + id_media_span_url + '\' target=\'_blank\'>' + id_media_span.firstChild.nodeValue + '</a>';
+   //     }
+   // }
+}
+</script>
+</head>
+
+<body>
+<div data-type="roll" data-appid="1077" id="isohu-topbar"></div>
+<link type="text/css" rel="stylesheet" href="http://r.suc.itc.cn/combo.action?v.11120101&r=/itoolbar/channel/itoolbar.css&t=css&c=utf-8" />
+<script type="text/javascript" src="http://r.suc.itc.cn/combo.action?v.2011122101&r=/itoolbar/plugins/jquery-1.6.2.js|/itoolbar/core/passport.js|/itoolbar/core/base64.js|/itoolbar/core/jquery.cookie.js|/itoolbar/core/jquery.hotmap.js|/itoolbar/core/jquery.easing.js|/itoolbar/jquery.itoolbar.channel.js&t=js&c=utf-8" charset="utf-8"></script>
+<script type="text/javascript" >jQuery.noConflict();</script>
+
+<SOHUADCODE>
+</SOHUADCODE>
+
+<div id="headers" class="area">
+	<div class="titleFun clear">
+		<div class="title" title=�ͻ����ͯز� 9����΢��֤�����(ͼ)-���
+			<h1>�ͻ����ͯز� 9����΢��֤�����(ͼ)</h1>
+		</div>
+		<div class="fun">
+			<ul>
+				<li class="share" title="���<span class="shareBG" onmouseover="showLayer('seleA', 'share_lay')"></span><span class="seleBtn" id="seleA" onmouseover="showLayer('seleA', 'share_lay')"></span>
+					<div class="shareLay hidden" id="share_lay" onmouseover="showLayer('seleA', 'share_lay')">
+						<div class="top"></div>
+						<p class="isohu"><a href="javascript:void(0)" onclick="submitForm()"><span class="kj"></span>���Ѻ�/p>
+						<p><a href="javascript:void(0)" onclick="jumpUrl('t')"><span class="blg"></span>���/a></p>
+						<p><a href="javascript:void(0)" onclick="jumpUrl('qq')"><span class="qq"></span>QQ���/a></p>
+						<p><a href="javascript:void(0)" onclick="jumpUrl('bai')"><span class="bsh"></span>���</a></p>
+						<p><a href="javascript:void(0)" onclick="jumpUrl('kaixin')"><span class="kxw"></span>����</a></p>
+						<p><a href="javascript:void(0)" onclick="jumpUrl('renren')"><span class="rrw"></span>���</a></p>
+						<p><a href="javascript:void(0)" onclick="jumpUrl('douban')"><span class="db"></span>����a></p>
+						<p><a href="javascript:void(0)" onclick="jumpUrl('itb')"><span class="itb"></span>i���/a></p>
+						<p><a href="javascript:void(0)" onclick="jumpUrl('go139')"><span class="go139"></span>���</p>
+						<div class="bot"></div>
+					</div>
+				</li>
+				<li class="copylink" title="������><a href="javascript:void(0)" onclick="copyLink()">������/a></li>
+				<li class="print" title="��><a href="javascript:printArticle()">��/a></li>
+				<li class="fontSize" title="����><span class="fszt fsC" onmouseover="showLayer('seleB', 'font_size_lay')"></span><span class="seleBtn" id="seleB" onmouseover="showLayer('seleB', 'font_size_lay')"></span>
+					<div class="fsLay hidden" id="font_size_lay" onmouseover="showLayer('seleB', 'font_size_lay')">
+						<a href="javascript:doZoom(16)">��>
+						<a href="javascript:doZoom(14)">�</a>
+						<a href="javascript:doZoom(12)">С</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="timeTag">
+		<span class="time">2012�01�16�11:27</span>
+		
+	</div>
+</div>
+
+<div id="main" class="area">
+	<div class="left">
+                <div id="media_name" style="display:none">ǧ���</div>
+
+		<div id="recommend_follower" class="com-right-bord mediaPic">		
+						<div data-baseid="" passport="" class="box com-per-box clearfix">
+		            <div class="per-pic"><a target="_blank" id="imglinker" href=""><img id="thispic" height="75" width="75" src="http://photo.pic.sohu.com/images/oldblog/person/11111.gif"></a></div>
+		            <div class="per-con">
+		                <p><a id="thislink" target="_blank" href="">
+		                </a></p>
+		
+		                <div class="fun com-follow"><a attr="0" href="javascript:void(0)" class="bA follow"></a></div>
+		            </div>
+		        </div>		
+		</div>    
+<div id="rollSide">
+	<div class="comLink"><a href="javascript:void(0)" onclick="goTalk();"><strong></strong>˵���a></div>
+	<div class="shareLink"><a href="javascript:void(0)" onclick="submitForm()"><strong></strong><em class="kj"></em>���a></div>
+</div>
+<script type="text/javascript">
+        function move(){
+           var browser_hd = jQuery(window).height();
+            rollSide.css({top:(browser_hd-300+jQuery(window).scrollTop())+"px"});
+            setTimeout("move()",30)
+         };
+         var rollSide = jQuery("#rollSide");
+         var browser_hd = jQuery(window).height();
+         rollSide.css({top:(browser_hd-300)+"px"});
+         move();
+</script>
+
+<script type="text/javascript">
+		var isohu_jsonstr={"code":0,"msg":"","data":{"accountId":52059164,"uid":"u244845931","passport":"iqianhuawang@sohu.com","nick":"???","icon":"http://1813.img.pp.sohu.com.cn/images/2011/9/23/11/13/u244845931_13351620642g214.jpg","image":"http://1822.img.pp.sohu.com.cn/images/2011/9/23/11/13/u244845931_133516204cfg214.jpg","detailDesc":"","spaceName":"??????","spaceDesc":"","tipLevel":0,"domain":"iqhwang","homeurl":"http://iqhwang.i.sohu.com/"}};
+
+                if(isohu_jsonstr.code == 1){
+                    $("#recommend_follower").hide();
+                    $("#share_lay .isohu").hide();
+                    $("#rollSide .shareLink").hide();
+                }else if(isohu_jsonstr == ''){
+                    $("#recommend_follower").hide();
+                    $("#media_name").css("margin-top","24px");
+                    $("#media_name").show();
+                    $("#share_lay .isohu").hide();
+                    $("#rollSide .shareLink").hide();
+                }else{
+                    $("#recommend_follower").show();
+		    var pp = isohu_jsonstr.data.passport;
+		    var str = Base64 ? Base64.encode(/focus\.cn$/ig.test(pp) ? (pp + "@focus.cn") : pp) : pp;
+		    $("#recommend_follower .com-per-box").attr("passport",pp);
+		    $("#recommend_follower .com-per-box").attr("data-baseid",str);
+                    if(isohu_jsonstr["data"]["image"]==''){
+
+                    }else{
+                       document.getElementById("thispic").src=isohu_jsonstr["data"]["image"];
+                    }
+		    //document.getElementById("thispic").src=isohu_jsonstr["data"]["image"];
+                    document.getElementById("imglinker").href=isohu_jsonstr["data"]["homeurl"];
+                    document.getElementById("thislink").href=isohu_jsonstr["data"]["homeurl"];
+                    $("#thislink").html('ǧ���');
+                }
+                // document.getElementById("thislink").innerText='ǧ���';//isohu_jsonstr["data"]["nick"];
+                
+                
+</script>
+	</div>
+	<div class="right">
+		
+		<div class="top"><div class="angle"></div></div>
+		<div class="mainCont">
+			<div class="text clear" id="contentText">
+			<DIV align="center"><TABLE align="center"><TBODY><TR><TD><DIV align="center"><IMG src="http://photocdn.sohu.com/20120116/Img332312132.jpg" alt="������ķ?��¹����ͼ"></DIV></TD></TR></TBODY></TABLE></DIV><DIV align="center"><FONT style="FONT-SIZE: 12px">������ķ?��¹����ͼ</FONT></DIV><BR>�������ר�壺�ݡ���籨��1�15�������ͻ�Ů��������ķ?��¹����Arfa KarimRandhawa��9�ʱ�����ı���λ�����΢��֤�������MCP����Ȼ��Ӣ�ţ����16������������ȥ���<BR><BR>����2004������¹��9�ʱ����ͳ��ȫ����С�����֤����������������š�Ȼ�����ͻ�ý��ƣ���Ϊ��������ļ����ȥ���<BR><BR>�������¹����ǰ��������ͻ��������ʡ��Punjab�������϶�hore��һ�Ҿ��������ݰͻ�������������ܶ���������¹��������������ʡ��ɳ���ɳ���habazSharif����<BR><BR>����2005����ͻ��������¹��������������Fatimah Jinnah GoldMedal����������������ȡ�õĳɾ͡�2006�����¹������������е���Tech-Ed�������Ϸ�����������ȶ�ģ�BillGates����������¹���ι���������������Դ���)
+			</div>
+			
+			
+
+
+		    <script type="text/javascript" src="http://comment.news.sohu.com/upload/comment4/javascript/sohu.comment.v2012011601.js"></script>
+		        <div id="SOHUcommentTitle"></div>	
+		        <div id="SOHUcomment" class="comment clear"></div>	
+
+	                <!--�˵�����-->
+					
+                        <script type="text/javascript">
+		           SohuComment.Init({
+		           pageList:true,//�ʾҳ�
+	                   showList:true,//�������		           topicId: topicId,
+                           qingComm:true
+		           });
+		           jQuery.follower();
+                         </script>
+                         <!--�˵����� end-->
+		</div>
+		<div class="mainAD">
+			
+
+			<SOHUADCODE><div id=TurnAD563 width=200 height=420></div>
+ <script type=text/javascript>
+try{
+var TurnAD563=new Cookie(document,"TurnAD563",24);
+TurnAD563.load();
+TurnAD563.visit=(TurnAD563.visit==null)?parseInt(Math.random()*3+1):TurnAD563.visit;
+if(TurnAD563.visit!=0)var intTurnAD563=TurnAD563.visit;
+TurnAD563.visit++;
+TurnAD563.visit=(TurnAD563.visit>3)?1:TurnAD563.visit;
+TurnAD563.store();
+function showTurnAD563(basenum){
+if (basenum==1){
+document.getElementById('TurnAD563').innerHTML ='<iframe width=200 height=420 marginwidth=0 marginheight=0 hspace=0 frameborder=0 scrolling=no bordercolor=#000000 src=http://images.sohu.com/bill/s2011/hanzhijuan/xinghefengshang/weipindao/1221/jiapin.htm></iframe>';}
+else if(basenum==2){
+document.getElementById('TurnAD563').innerHTML ='<iframe width=200 height=420 marginwidth=0 marginheight=0 hspace=0 frameborder=0 scrolling=no bordercolor=#000000 src=http://images.sohu.com/bill/s2011/hanzhijuan/xinghefengshang/weipindao/1221/jiapin.htm></iframe>';}
+else{
+if(typeof(document.pv)=='undefined')document.pv = new Array();var _a=new Image();
+_a.src='http://imp.ad-plus.cn/201201/ceb2724823cfe5747824cfe54c1463fa.php?a=99';document.pv.push(_a);
+document.write('<a href="http://sohu.ad-plus.cn/event.ng/Type=click&FlightID=201201&TargetID=sohu&Values=ceb27248,23cfe574,7824cfe5,4c1463fa&AdID=1356426" target=_blank><img src="http://images.sohu.com/bill/s2011/jiaren/ef/200420ef.gif" border=0 width="200" height="420"></img></a>');}
+}
+showTurnAD563(intTurnAD563);
+}catch(e){}
+</script>
+</SOHUADCODE>
+			
+			<SOHUADCODE></SOHUADCODE>
+			
+			<SOHUADCODE></SOHUADCODE>
+			
+			<SOHUADCODE></SOHUADCODE>
+			
+			<SOHUADCODE></SOHUADCODE>
+			
+			<SOHUADCODE></SOHUADCODE>
+		</div>
+		<div class="bot"></div>
+	</div>
+</div>
+
+<form id="frm" target="qing_share" action="http://i.sohu.com/a/app/mblog/share.htm" method="post">
+<input type="hidden" name="title" id="frm_title" value="frmTitle">
+<input type="hidden" name="content" id="frm_content">
+<input type="hidden" name="url" id="frm_url">
+<input type="hidden" name="xpt" id="frm_xpt">
+<input type="hidden" name="newsId" id="frm_newsId">
+</form>
+<div id="foot" class="Area"> 
+Copyright &copy; 2012 Sohu.com Inc. All Rights Reserved. ���<span class="unline"><a href="http://corp.sohu.com/s2007/copyright/" target="_blank">����</a></span><br />
+</div>
+<SCRIPT language=JavaScript src="http://js.sohu.com/pv.js"></SCRIPT>
+<script language="javascript" src="http://js.sohu.com/wrating0820.js"></script>
+<script language="javascript">
+var  _wratingId = null;
+try{
+_wratingId = _getAcc();
+}catch(e){}
+if(_wratingId !=null){
+document.write('<scr'+'ipt type="text/javascript" src="http://sohu.wrating.com/a1.js"></scr'+'ipt>');
+}
+</script>
+<script language="javascript">
+if(_wratingId !=null){
+document.write('<scr'+'ipt type="text/javascript">');
+document.write('var vjAcc="'+_wratingId+'";');
+document.write('var wrUrl="http://sohu.wrating.com/";');
+document.write('try{vjTrack();}catch(e){}');
+document.write('</scr'+'ipt>');
+}
+</script>
+<!--SOHU:SUB_FOOT_DIV-->
+
+
+        
+<script type="text/javascript">
+var flag=true;
+var win;	
+var listener = setInterval("check()",1000);
+    function check(){
+        if(flag){
+            if(win && win.closed){
+                flag=false;
+                document.location.reload();
+            }
+        }else{
+            clearInterval(listener);
+        }
+    }
+	function goTalk(){
+		var pos = $("#SOHUcomment").offset();
+		window.scrollTo(0,pos.top-100);
+	}
+//<![CDATA[
+/**
+ * @Description:���ϵĴ� * @Author Keynesqu<keynesqu#sohu-inc.com>
+ * @Release 2011/10
+*/
+//window.topicId = '318144506';
+//Function with print 
+var printArticle = function(){
+	jQuery.getScript("http://news.sohu.com/upload/20100413/print_qing.min.js",function(){printer.print()},true)
+}
+//Function with the url cliped by clipboard
+var copyLink = function(){
+	try {
+		var cText =  document.location.toString();
+		if (window.clipboardData) {
+			window.clipboardData.setData("Text", cText);
+			alert("������");
+		} else if (window.netscape) {
+			try {
+				netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+			} catch (e) {
+				alert("��������Ϊ���������\n����˲����������'about:config'���س�\nȻ��signed.applets.codebase_principal_support'��Ϊ'true',���������;
+				return false;
+			}
+			var clip = Components.classes['@mozilla.org/widget/clipboard;1'].createInstance(Components.interfaces.nsIClipboard);
+			if (!clip) 
+				return;
+			var trans = Components.classes['@mozilla.org/widget/transferable;1'].createInstance(Components.interfaces.nsITransferable);
+			if (!trans) {
+				return;
+			}
+			trans.addDataFlavor('text/unicode');
+			var str = new Object();
+			var len = new Object();
+			var str = Components.classes["@mozilla.org/supports-string;1"].createInstance(Components.interfaces.nsISupportsString);
+			
+			str.data = cText;
+			trans.setTransferData("text/unicode", str, cText.length * 2);
+			var clipid = Components.interfaces.nsIClipboard;
+			if (!clip) 
+				return false;
+			clip.setData(trans, null, clipid.kGlobalClipboard);
+			alert("������");
+		}
+	} catch (e) {
+	}
+};
+
+function submitForm(){
+        win = window.open( '', 'qing_share', 'width=700,height=600,scrollbars=no');
+	$("#frm_title").val(topicTitle);
+	$("#frm_content").val(topicSummary);
+	$("#frm_url").val(topicUrl);
+	$("#frm_xpt").val(str);
+	$("#frm_newsId").val(topicId);
+	$("#frm").submit();
+}
+var grobal_arg={};
+grobal_arg['topicId']=topicId;
+var jumpUrl=function(x){
+	var url = '', e = encodeURIComponent, s = screen, d = document, wd = 0, hg = 0, u = d.location , y = x,topicId =grobal_arg.topicId;
+	//ȱ���Ѻ���תURL
+	//topicId������ʽ
+	switch (y)
+	{
+	case 't':	url ="http://t.sohu.com/third/post.jsp?link="+e(u.href)+"&title="+e(d.title);wd = 660;hg = 470;break;
+	case 'bai':	url ="http://bai.sohu.com/share/blank/addbutton.do?link="+e(u.href)+"&title="+e(d.title);wd = 480;hg = 340;break;
+	case 'douban':	url ="http://www.douban.com/recommend/?url="+e(u.href)+"&title="+e(d.title);wd = 460;hg = 340;break;
+	case 'renren':	url ="http://share.renren.com/share/buttonshare?link="+e(u.href)+"&title="+e(d.title);wd = 590;hg = 430;break;
+	case 'kaixin':	url ="http://www.kaixin001.com/repaste/share.php?rurl="+e(u.href)+"&rtitle="+e(d.title);wd = 540;hg = 360;break;
+	case 'itb':     var ctxt = $('#contentText').length>0?$('#contentText').text().replace(/<[^>].*?>/g,'').substr(0,120):'';
+			url ="http://tieba.baidu.com/i/sys/share?link="+e(u.href)+"&type=text&title="+e(d.title)+"&content="+e(ctxt);wd = 626;hg = 436;
+			break;
+	case 'go139':	url ="http://go.139.com/ishare.do?shareUrl="+e(u.href)+"&title="+e(d.title)+"&sid=20dd04a99380c2e8d56cf187f6658169";wd = 630;hg = 500;break;
+	case 'qq':	url ="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url="+e(u.href);wd = 900;hg = 500;break;
+	default :	return false;
+	}
+	var a=function(){
+		if (!window.open(url, 'sohushare', ['toolbar=0,status=0,resizable=1,width='+ wd +',height='+ hg +',left='+ (s.width - wd) / 2+ ',top='+ (s.height - hg) / 2]))
+			u.href = [url].join('');
+	}
+	if (/Firefox/.test(navigator.userAgent)){
+		setTimeout(a, 0);
+	}else{
+		a();
+	}
+
+	var stat = (new Image);
+	try{stat.src = "http://219.234.82.222/zhuanfa/index.php?newsId=" + /http:\/\/(.*)(\.sohu.com\/.*\/n)(.{9})/g.exec(document.location)[3] + "&newsName=" + e(d.title) + "&newsUrl=" + d.location.href + "&postId=" + x;
+	}catch(e){}
+}
+var winLoadFuc=(function(window,topicId){
+			var that = window,topicId =topicId;
+			var time=(new Date().getTime()).toString();
+			var name='qu'+time;
+			window[name]=function(data){
+			if (data) {
+						$('#rollSide .shareLink a strong').text(data[topicId].spreadcount);
+			}else{
+			return
+			}
+			};
+			var s = that.document.body;
+					 var b=document.createElement('script');
+					 b.src='http://i.sohu.com/a/app/mblog/counts.htm?ids=qingsohu_'+topicId+'&cb='+name;
+					 if(s){
+						try{
+							s.appendChild(b)
+						}catch (e) {
+						}
+						}
+						var j = {}
+						j['id']=topicId;
+						j['name']=name;
+						return j
+			}
+			)(window,topicId);
+
+//]]>
+</script>
+
+<SOHUADCODE>
+</SOHUADCODE>
+
+</body>
+</html>

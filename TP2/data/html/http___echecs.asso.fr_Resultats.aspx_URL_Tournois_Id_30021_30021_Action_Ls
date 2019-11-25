@@ -1,0 +1,1878 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="ctl00_MasterHeader"><meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" /><meta name="keywords" /><meta name="description" /><title>
+	F&eacute;d&eacute;ration Fran&ccedil;aise des &Eacute;checs
+</title><link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" /><link href="http://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet" type="text/css" /><link type="text/css" rel="stylesheet" href="ffe.css?version=6" /><link type="text/css" rel="stylesheet" href="old.css?version=1" /><link rel="shortcut icon" type="image/x-icon" href="images/ffe16.ico" />
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-71022811-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+<body>
+<div id="menu-haut">
+  <a href="Plan.aspx">Plan du site</a> &nbsp;|&nbsp;
+  <a href="Default.aspx?Cat=50">Contact</a> &nbsp;|&nbsp;
+  <a href="http://zonedejeu.ffechecs.org">Zone de jeu</a> &nbsp;|&nbsp;
+  <a href="Revues.aspx">Publications</a> &nbsp;|&nbsp;
+  <a href="Connect.aspx">Mon Compte</a> &nbsp;|&nbsp;
+  <a href="http://clubs.echecs.asso.fr">Gérer son Club</a> &nbsp;|&nbsp;
+  <a href="http://admin.echecs.asso.fr">Directeurs de Groupes</a> &nbsp;|&nbsp;
+  <a href="Print.aspx" id="ctl00_LinkPrint">Imprimer</a>
+</div>  
+<div id="ctl00_divheader">
+  <div id="header-search">
+    <form class="form-search" method=post name=FormJoueur action="ListeJoueurs.aspx?Action=FFE">
+      <label class="label-search">Rechercher un joueur</label>
+      <input class=input-search type="text" size="12" name="JoueurNom" value="" />
+      <input class=input-search type="submit" value="OK" />
+    </form>
+    <form class="form-search" method=post name=FormClub action="ListeClubs.aspx?Action=CLUB">
+      <label class=label-search>Rechercher un club</label>
+      <input class=input-search type="text" name="ClubNom" size="12" value="" />
+      <input class=input-search type="submit" value="OK" />&nbsp;&nbsp;
+    </form>
+    <form class="form-search" method=post name=FormActu action="Default.aspx">
+      <label class=label-search>Rechercher dans le site</label>
+      <input class=input-search type="text" name="ActuFiltre" size="12" value="" />
+      <input class=input-search type="submit" value="OK" />&nbsp;&nbsp;
+    </form>
+      <a href="https://www.facebook.com/ffechecs?fref=ts" target=_blank><img src=images/facebook.png /></a>&nbsp;&nbsp;
+      <a href="https://twitter.com/ffechecs" target=_blank><img src=images/twitter.png /></a>
+  </div>
+  <div id="bandeau">
+    <img src="images/bandeau-ffe.png" alt="ffe" title="ffe" />
+  </div>
+<!-- end #bandeau -->
+  <ul id="nav"><li class="current"><a href="Default.aspx">Accueil</a></li><li><a href="#">Découvrir</a><ul><li><a target=_blank href="http://www.echecs.asso.fr/Actu.aspx?Ref=11983">Règles du Jeu</a></li><li><a href="Revues.aspx">Publications</a></li><li><a target=_blank href="http://zonedejeu.ffechecs.org">Zone de Jeux</a></li><li><a href="Default.aspx?Cat=41">Histoire des échecs</a></li><li><a target=_blank href="https://photos.ffechecs.org/">Albums photos</a></li><li><a target=_blank href="https://www.youtube.com/channel/UCn6wdVs-gSmZBJXSAWPzf7Q/videos">Vidéos</a></li><li><a target=_blank href="http://echecs.asso.fr/Default.aspx?Cat=60">Grands évènements</a></li></ul></li><li><a href="#">FFE</a><ul><li><a href="Default.aspx?Cat=12">FFE - Présentation</a></li><li><a href="Ligues.aspx">Ligues</a></li><li><a href="Comites.aspx">Comités</a></li><li><a href="Clubs.aspx">Clubs</a></li><li><a href="Default.aspx?Cat=14">Licences</a></li><li><a href="Joueurs.aspx">Licenciés</a></li><li><a href="Default.aspx?Cat=55">Les effectifs de la F.F.E.</a></li><li><a href="Default.aspx?Cat=13">Siège fédéral</a></li><li><a href="Default.aspx?Cat=35">Commissions-Directions</a></li><li><a href="Default.aspx?Cat=42">Infos fédérales</a></li><li><a href="Default.aspx?Cat=49">Appel à projets</a></li><li><a href="Default.aspx?Cat=54">Centenaire de la FFE</a></li><li><a href="Default.aspx?Cat=50">Contacts</a></li></ul></li><li><a href="#">Compétitions</a><ul><li><a href="Calendrier.aspx">Calendrier</a></li><li><a href="Equipes.aspx">Par équipes</a></li><li><a href="Tournois.aspx">Tournois homologués</a></li><li><a href="Default.aspx?Cat=21">Vos opens</a></li><li><a href="Default.aspx?Cat=16">Ch. France Jeunes</a></li><li><a href="Default.aspx?Cat=15">Ch. France</a></li><li><a href="Default.aspx?Cat=28">Challenge BLitz FFE</a></li><li><a href="Default.aspx?Cat=58">Elo Rapide FFE </a></li><li><a target=_blank href="http://ffechecs.org">Portail des événements</a></li></ul></li><li><a href="#">Secteurs</a><ul><li><a href="Default.aspx?Cat=8">Haut niveau et titrés</a></li><li><a href="Default.aspx?Cat=7">Secteur féminin</a></li><li><a target=_blank href="http://jeunes.ffechecs.fr">Jeunes</a></li><li><a target=_blank href="http://scolaires.ffechecs.fr">Scolaires</a></li><li><a target=_blank href="http://handi.ffechecs.fr">Handicap</a></li><li><a target=_blank href="https://dna.ffechecs.fr/">Arbitrage</a></li><li><a target=_blank href="http://entraineurs.ffechecs.fr">Entraînement</a></li><li><a href="Default.aspx?Cat=9">Discipline</a></li><li><a target=_blank href="https://ctf.ffechecs.fr/">Commission technique</a></li><li><a href="Default.aspx?Cat=19">Téléthon</a></li><li><a href="Default.aspx?Cat=23">Vos Stages</a></li></ul></li><li><a href="#">Documents</a><ul><li><a href="Default.aspx?Cat=17">Règlements</a></li><li><a href="Default.aspx?Cat=20">Comptes rendus</a></li><li><a href="Default.aspx?Cat=26">Documents Clubs</a></li><li><a href="Default.aspx?Cat=46">Ressources pédagogiques</a></li></ul></li><li><a href="#">Développement</a><ul><li><a href="Default.aspx?Cat=6">Formation</a></li><li><a href="Default.aspx?Cat=39">Nouveaux Publics</a></li><li><a href="Default.aspx?Cat=40">Semaines Thématiques</a></li><li><a href="Default.aspx?Cat=2">Annonces Emploi</a></li><li><a href="Default.aspx?Cat=24">Annonces Clubs</a></li><li><a target=_blank href="http://www.echecs.asso.fr/Default.aspx?Cat=57">Protection judiciaire de la Jeunesse</a></li><li><a href="Default.aspx?Cat=49">Appel à projets</a></li><li><a href="Default.aspx?Cat=59">Semaine au féminin</a></li></ul></li><li><a href="Default.aspx?Cat=36">Partenaires</a><ul><li><a target=_blank href="http://www.europe-echecs.com">Europe Echecs</a></li><li><a target=_blank href="http://www.profession-sport-loisirs.fr">Profession Sports & Loisirs</a></li><li><a target=_blank href="http://www.echiquierdelareussite.org">L'échiquier de la réussite</a></li><li><a target=_blank href="http://www.olibris.fr">Olibris</a></li><li><a target=_blank href="http://www.ccas.fr">C.C.A.S.</a></li><li><a target=_blank href="http://www.ucpa-vacances.com">U.C.P.A.</a></li><li><a target=_blank href="http://www.univ-lyon1.fr">U.C.B. Lyon I</a></li><li><a target=_blank href="http://www.chateauvillandry.fr">Le Château de Villandry</a></li><li><a target=_blank href="https://www.apf.asso.fr/">A.P.F.</a></li><li><a target=_blank href="http://echecs.asso.fr/actu.aspx?ref=10962">Nature et Découvertes</a></li><li><a target=_blank href="http://www.echecs.asso.fr/Actu.aspx?Ref=10975">D.P.J.J.</a></li><li><a target=_blank href="https://unss.org/">U.N.S.S.</a></li><li><a target=_blank href="https://usep.org/">U.S.E.P.</a></li><li><a target=_blank href="http://www.aefe.fr/">A.E.F.E.</a></li><li><a target=_blank href="http://www.ffse.fr/">F.F.S.E.</a></li><li><a target=_blank href="https://www.sportetcitoyennete.com/">Sport et Citoyenneté</a></li><li><a target=_blank href="http://www.femixsports.fr/">Femix'Sports</a></li></ul></li><li><a href="Actu.aspx?Ref=10771">Boutique</a></li></ul>
+<!-- end #menu -->
+  <div id="ctl00_divpub" class="pub">
+    <a id="ctl00_LinkBandeau" href="http://echecs.asso.fr/Actu.aspx?Ref=12132"><img src="images/Bandeau/masterclass_novembre_2019.jpg" border="0" /></a>
+  </div>
+<!-- end #pub -->
+</div>
+<!-- end #header -->
+<div id="page">
+  <div id="page-bgtop">
+    <div id="page-bgbtm">
+      
+
+<table id=TablePage cellSpacing=6 cellPadding=2 Class=page >
+  <tr>
+    <td>
+<div align=center><div align=center>
+<table width=800 cellpadding=2 cellspacing=0 style=border-collapse:collapse;>
+ <tr class=papi_titre>
+  <td colspan=8 align=center>Départemental scolaires des P.A écoliers 2014<br />Liste des participants</td>
+ </tr>
+ <tr class=papi_liste_t>
+  <td class=papi_r>Nr</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>Nom</td>
+  <td class=papi_c>Rapide</td>
+  <td class=papi_c>Cat.</td>
+  <td class=papi_c>Fede</td>
+  <td class=papi_c>Ligue</td>
+  <td class=papi_l>Club</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>1</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>ABADIE-DAVID Noa</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Lescar Victor Hugo</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>2</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>AFONSO Baptiste</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Artigueloutan</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>3</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>AIT SLIMANE Ilyana</td>
+  <td class=papi_r>1099&nbsp;E</td>
+  <td class=papi_c>PupF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l>Marca</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>4</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>ALLAIRE Mael</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jurançon Barthou</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>5</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>ARIBAUT Guillaume</td>
+  <td class=papi_r>1009&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>6</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>ASCONE Baptiste</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Buisson</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>7</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>ATTARD Theophile</td>
+  <td class=papi_r>800&nbsp;R</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Bosquet</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>8</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BADER Antoine</td>
+  <td class=papi_r>1220&nbsp;R</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>St Joseph Morlaas</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>9</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BARNABA Noa</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jurançon Barthou</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>10</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BARNONCEL Raya</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Ousse Jules Verne</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>11</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BEAUDUIN Kei</td>
+  <td class=papi_r>1390&nbsp;R</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/JPN.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Idron</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>12</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BELLOCQ Aude</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Asson Bourg</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>13</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BENITEZ Jeremy</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jurançon Barthou</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>14</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BERNARD Noah</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Lauriers</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>15</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BERTOLUTTI Antoni</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jurançon Barthou</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>16</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BIEHLER Gregory</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Asson Bourg</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>17</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BILLE Emma Rose</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PupF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Bouillerce</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>18</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BOISSIER Clement</td>
+  <td class=papi_r>940&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>St Dominique</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>19</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BON Noa</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Bouillerce</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>20</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BORREDON Mathilde</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>21</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BOSDURE Lucas</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Asson Bourg</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>22</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BOUDIYOUR Bilal</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Notre Dame</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>23</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BOUHIER-BAO Louka</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Notre Dame</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>24</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BOULY Eneko</td>
+  <td class=papi_r>1230&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>25</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BOURGOIN Aristide</td>
+  <td class=papi_r>1009&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l>Buisson</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>26</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BOURGOIN Nidal</td>
+  <td class=papi_r>880&nbsp;R</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Buisson</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>27</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BOUYGARD Olivier</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Les Lilas</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>28</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BRAULT Mevena</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Bouillerce</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>29</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BREINING Phuong</td>
+  <td class=papi_r>1009&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l>Lauriers</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>30</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BRUNEAU Lilian</td>
+  <td class=papi_r>1230&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>31</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>CANDELOT Clement</td>
+  <td class=papi_r>1400&nbsp;R</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Agnos</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>32</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>CARRERE Julie</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Mazères-Lezons</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>33</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>CASTERA Elya</td>
+  <td class=papi_r>800&nbsp;R</td>
+  <td class=papi_c>PouF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Gelos bourg</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>34</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>CASTERAN Nolan</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Paule Constant Gan</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>35</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>CATARINO Baptiste</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Paule Constant Gan</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>36</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>CAZE Nicolas</td>
+  <td class=papi_r>920&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Henri IV</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>37</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>CEPPARO Benjamin</td>
+  <td class=papi_r>1000&nbsp;R</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Artigueloutan</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>38</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>CHATAIGNER Marc</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>International School of Béarn</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>39</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>CHAUVEAU Louis</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>40</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>CONTENT Mathurin</td>
+  <td class=papi_r>870&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>41</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>COUDROY Lucas</td>
+  <td class=papi_r>1210&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Artigueloutan</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>42</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>COUPET Anthony</td>
+  <td class=papi_r>1090&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Gelos bourg</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>43</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>COUTURIER Anatole</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Asson Bourg</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>44</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DA SILVA Lucie</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Artigueloutan</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>45</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DA SILVA MACIEL Isaina</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Perlic Nord</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>46</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DAGUERRE Cedric</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Sauvagnon</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>47</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DAINOTTO Matteo</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Gaston Phoebus</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>48</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DALOUSSI Ismael</td>
+  <td class=papi_r>1030&nbsp;R</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Les Fleurs</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>49</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DE SOUSA Laurie</td>
+  <td class=papi_r>920&nbsp;R</td>
+  <td class=papi_c>PupF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Buisson</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>50</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DEHAYE Swan</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Bouillerce</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>51</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DELIENCOURT Lou</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Mazères-Lezons</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>52</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DEMEULENAERE Vincent</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Lescar Laou</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>53</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DEMOISY Baptiste</td>
+  <td class=papi_r>1080&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Lescar Victor Hugo</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>54</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DESNOUES Eloane</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>55</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DESTRADE Mila</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Les Lilas</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>56</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DESTUGUES Mathilde</td>
+  <td class=papi_r>800&nbsp;R</td>
+  <td class=papi_c>PupF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>57</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DOURY Maxime</td>
+  <td class=papi_r>1099&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l>Fleurs</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>58</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DUBOIS Dylan</td>
+  <td class=papi_r>960&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jean Moulin</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>59</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DUCASSE Antoine</td>
+  <td class=papi_r>1120&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Gaston Phoebus</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>60</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DUCASSE Arthur</td>
+  <td class=papi_r>850&nbsp;R</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Gaston Phoebus</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>61</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DUFFAU Erwan</td>
+  <td class=papi_r>1140&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Artix Sarrailh</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>62</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DUPAS Quentin</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Paule Constant Gan</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>63</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DUPOUY Titouan</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Mazères-Lezons</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>64</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>EPOV Ivan</td>
+  <td class=papi_r>900&nbsp;R</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>St Dominique</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>65</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>ESPIL Anais</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>66</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>FATTAH Vincent</td>
+  <td class=papi_r>800&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Perlic Nord</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>67</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>FATTAU David</td>
+  <td class=papi_r>1099&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l>Perlic Nord</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>68</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>FAVAREL-LUBEIGT Helina</td>
+  <td class=papi_r>1490&nbsp;R</td>
+  <td class=papi_c>PouF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jean Sarrailh</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>69</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>FEUGAS Peyo</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Notre Dame</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>70</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>FIALA Gabriel</td>
+  <td class=papi_r>890&nbsp;R</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Gelos Bourg</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>71</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>FONDANAICHE Noam</td>
+  <td class=papi_r>1020&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Paule Constant Gan</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>72</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>FOUQUE Matthieu</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Buisson</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>73</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>FOUQUY Christophe</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Gaston Phoebus</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>74</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GALLERAND-BETOURNE Marjane</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Lauriers</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>75</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GALLETEAU Baptiste</td>
+  <td class=papi_r>1099&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l>Lauriers</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>76</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GALLETEAU Faustine</td>
+  <td class=papi_r>1009&nbsp;E</td>
+  <td class=papi_c>PpoF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l>Lauriers</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>77</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GAUCI-REINA Pablo</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Bosquet</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>78</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GAUDEFROY Adele</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Lescar Laou</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>79</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GAYET Yanis</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jurançon Barthou</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>80</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GIRAUD Ethan</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Buisson</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>81</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GRANDJEAN Enzo</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Artigueloutan</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>82</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GRANDY-SOUKASEUM Tia</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Buisson</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>83</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GRIMAULT Gabin</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>84</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GUEKHAYEV Aboubakar</td>
+  <td class=papi_r>1000&nbsp;R</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Echiquier Henri IV Pau</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>85</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GUENEBEAUD Esteban</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Ste Jeanne Elisabeth</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>86</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GUGUNAVA Davit</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/GEO.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Marca</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>87</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GUICHARD Thibaud</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Artigueloutan</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>88</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GUYONNAUD Albin</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Lescar Laou</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>89</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>HANNA Myriam</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Bouillerce</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>90</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>HOCHET Anne-Sophie</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jurançon Barthou</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>91</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>JOBARD Marcos</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Bouillerce</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>92</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>JOUVIN Candice</td>
+  <td class=papi_r>800&nbsp;R</td>
+  <td class=papi_c>PpoF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Artigueloutan</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>93</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>JOUVIN Jules</td>
+  <td class=papi_r>990&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Artigueloutan</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>94</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>JUAN Aymeric</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Calandreta</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>95</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>KARDALI Yanis</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Gaston Phoebus</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>96</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LABARTHE Clara</td>
+  <td class=papi_r>920&nbsp;R</td>
+  <td class=papi_c>PupF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Gelos bourg</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>97</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LABARTHE DESSUS Yoan</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jurançon Barthou</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>98</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LABAT Antoine</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Buisson</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>99</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LAHADERNE Elodie</td>
+  <td class=papi_r>800&nbsp;R</td>
+  <td class=papi_c>PupF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Lescar Victor Hugo</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>100</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LAJOURNADE Gauthier</td>
+  <td class=papi_r>1009&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l>Paul Constant</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>101</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LALANDE Yohan</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Club d'Echecs Pau Berlioz</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>102</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LALANNE Ines</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>St François</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>103</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LALANNE Pierre</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>St François</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>104</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LAOULA Zakarya</td>
+  <td class=papi_r>1009&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l>Bouillerce</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>105</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LARQUE Charlotte</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>106</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LARQUE Loic</td>
+  <td class=papi_r>970&nbsp;R</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>107</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LASSEUR Esteban</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Bouillerce</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>108</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LASTAPIS Antonin</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Buisson</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>109</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LATASTE Edouard</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Buisson</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>110</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LATASTE Leonie</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Buisson</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>111</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LAURENT Enzo</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>112</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LECORNU Mila</td>
+  <td class=papi_r>850&nbsp;R</td>
+  <td class=papi_c>PupF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jean Moulin</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>113</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LECUCQ Jean</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Buisson</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>114</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LEVRERO Yarol</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Buisson</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>115</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LEYDERT Toine</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Gelos bourg</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>116</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MACHADO Joshua</td>
+  <td class=papi_r>890&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Artigueloutan</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>117</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MACHADO William</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Artigueloutan</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>118</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MAGNY Adrien</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Lescar Victor Hugo</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>119</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MALFROY Kilian</td>
+  <td class=papi_r>1000&nbsp;R</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>120</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MANCEAU PRADO Lise</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Artigueloutan</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>121</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MANESCAU Mateo</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jurançon Barthou</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>122</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MARCHAT Mathieu</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Lescar Laou</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>123</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MARCHOU Nicolas</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Asson Bourg</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>124</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MARIAS Oscar</td>
+  <td class=papi_r>1009&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l>Bizanos</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>125</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MARQUES CABRAL Anais</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Bouillerce</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>126</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MARTIN Emmanuel</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Nay Fronton</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>127</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MAUDOS Bastien</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>128</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MBIGUINO Oxane</td>
+  <td class=papi_r>840&nbsp;R</td>
+  <td class=papi_c>PupF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Paule Constant Gan</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>129</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MERCIER Evan</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Bizanos</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>130</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MERLETTE Oscar</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Club d'Echecs Pau Berlioz</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>131</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MESSEN Melchior</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Gelos bourg</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>132</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MICHAUT Arnaud</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Mazères-Lezons</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>133</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MICHAUT Marine</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Mazères-Lezons</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>134</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MINVIELLE Romain</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jurançon Barthou</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>135</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MOREAU Mathieu</td>
+  <td class=papi_r>1020&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>136</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>NABAILLES Bastien</td>
+  <td class=papi_r>810&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jean Moulin</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>137</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>NAHI Imad</td>
+  <td class=papi_r>910&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/MAR.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Gelos bourg</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>138</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>OLIVEIRA Catherine</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Bouillerce</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>139</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PANTELEYEV Denis</td>
+  <td class=papi_r>950&nbsp;R</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Nandina Park</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>140</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PARDO Jon</td>
+  <td class=papi_r>970&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>141</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PATUREL Alix</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jean Moulin</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>142</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PEDEBIBEN Lexane</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jurançon Barthou</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>143</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PEDEBIBEN Pierre</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jurançon Barthou</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>144</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PERE-TASTET Hadrien</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Lauriers</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>145</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PEREIRA Thibault</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Notre Dame</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>146</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PESSOA Alan</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Lescar Laou</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>147</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PEYRONNET Bastien</td>
+  <td class=papi_r>1009&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l>Perlic Nord</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>148</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PEYRONNET Lucas</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Perlic Nord</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>149</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PHILIPPE Quentin</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Perlic Nord</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>150</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PINARD Florian</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Paule Constant Gan</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>151</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>POTTIN Thomas</td>
+  <td class=papi_r>1009&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l>Fleurs</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>152</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PRUGUE Dorian</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Artigueloutan</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>153</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PUYGCERCOS Mathieu</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>154</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>RASSED Antoine</td>
+  <td class=papi_r>800&nbsp;R</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Gelos bourg</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>155</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>RENARD Nathan</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>156</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>ROCHE Kylian</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Paule Constant Gan</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>157</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>RODRIGUEZ Gabriel-Helios</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Marca</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>158</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>ROFES Enzo</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Stanislas Lavigne</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>159</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>ROFFARE Flavia</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jurançon Barthou</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>160</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>RUIZ Dorian</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jurançon Barthou</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>161</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>SABRIER Titouan</td>
+  <td class=papi_r>1070&nbsp;R</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Paule Constant Gan</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>162</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>SARTORETTI Marco</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jurançon Barthou</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>163</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>SAULI Hugo</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Paule Constant Gan</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>164</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>SCHNEE Amedee</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Ousse Jules Verne</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>165</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>SEIDI Victor</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Bouillerce</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>166</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>SIERRA Davy</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Lescar Laou</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>167</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>SOUQUES Victor</td>
+  <td class=papi_r>800&nbsp;R</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Buisson</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>168</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>TERREE Pablo</td>
+  <td class=papi_r>1009&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l>Buisson</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>169</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>TOULET Gaspard</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jurançon Barthou</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>170</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>TROISFONTAINES Alexandre</td>
+  <td class=papi_r>999&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>International School of Béarn</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>171</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>TURIBIO Benjamin</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>International School of Béarn</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>172</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>VALFORT Paul</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Perlic Nord</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>173</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>VIE Paul</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Jurançon Barthou</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>174</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>VILLENEUVE Robin</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PpoM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Assat</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>175</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>WOZNIAK Logan</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Bouillerce</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>176</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>ZAZOUL Chaima</td>
+  <td class=papi_r>799&nbsp;E</td>
+  <td class=papi_c>PouF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Marca</td>
+ </tr>
+</table>
+</div>
+</div>
+<div align=center>
+  <p>
+    
+  </p>
+</div>
+    </td>
+  </tr>
+</table>
+
+
+    </div>
+  </div>
+</div>
+<!-- end #page -->
+<div id="ctl00_divfooter">
+<div id="footer">
+  <p>
+    <strong>Copyright  © 2015 FFE | 
+    <a href="http://www.echecs.asso.fr/Ag/Mentions_legales_FFE.pdf">Mentions légales</a> |
+    <a href="http://www.echecs.asso.fr/Ag/RGPD.pdf">Protection des données</a></strong><br>
+    Fédération Française des Echecs | <span id="ctl00_LabelAdresse">6 rue de l'Eglise | 92600 ASNIERES SUR SEINE</span> <br>
+    tél : <span id="ctl00_LabelTel">01 39 44 65 80</span> | fax : 01 30 69 93 15 | webmestre : 
+    <a href="mailto:erick.mouret@echecs.asso.fr">erick.mouret@echecs.asso.fr</a>
+  </p><br>
+  <p id="logo-ffe"><img src="images/logo-ffe.png" /></p>
+</div>
+</div>
+</body>
+</html>
+

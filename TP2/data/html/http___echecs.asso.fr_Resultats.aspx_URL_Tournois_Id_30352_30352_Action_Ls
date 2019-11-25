@@ -1,0 +1,1298 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="ctl00_MasterHeader"><meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" /><meta name="keywords" /><meta name="description" /><title>
+	F&eacute;d&eacute;ration Fran&ccedil;aise des &Eacute;checs
+</title><link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" /><link href="http://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet" type="text/css" /><link type="text/css" rel="stylesheet" href="ffe.css?version=6" /><link type="text/css" rel="stylesheet" href="old.css?version=1" /><link rel="shortcut icon" type="image/x-icon" href="images/ffe16.ico" />
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-71022811-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+<body>
+<div id="menu-haut">
+  <a href="Plan.aspx">Plan du site</a> &nbsp;|&nbsp;
+  <a href="Default.aspx?Cat=50">Contact</a> &nbsp;|&nbsp;
+  <a href="http://zonedejeu.ffechecs.org">Zone de jeu</a> &nbsp;|&nbsp;
+  <a href="Revues.aspx">Publications</a> &nbsp;|&nbsp;
+  <a href="Connect.aspx">Mon Compte</a> &nbsp;|&nbsp;
+  <a href="http://clubs.echecs.asso.fr">Gérer son Club</a> &nbsp;|&nbsp;
+  <a href="http://admin.echecs.asso.fr">Directeurs de Groupes</a> &nbsp;|&nbsp;
+  <a href="Print.aspx" id="ctl00_LinkPrint">Imprimer</a>
+</div>  
+<div id="ctl00_divheader">
+  <div id="header-search">
+    <form class="form-search" method=post name=FormJoueur action="ListeJoueurs.aspx?Action=FFE">
+      <label class="label-search">Rechercher un joueur</label>
+      <input class=input-search type="text" size="12" name="JoueurNom" value="" />
+      <input class=input-search type="submit" value="OK" />
+    </form>
+    <form class="form-search" method=post name=FormClub action="ListeClubs.aspx?Action=CLUB">
+      <label class=label-search>Rechercher un club</label>
+      <input class=input-search type="text" name="ClubNom" size="12" value="" />
+      <input class=input-search type="submit" value="OK" />&nbsp;&nbsp;
+    </form>
+    <form class="form-search" method=post name=FormActu action="Default.aspx">
+      <label class=label-search>Rechercher dans le site</label>
+      <input class=input-search type="text" name="ActuFiltre" size="12" value="" />
+      <input class=input-search type="submit" value="OK" />&nbsp;&nbsp;
+    </form>
+      <a href="https://www.facebook.com/ffechecs?fref=ts" target=_blank><img src=images/facebook.png /></a>&nbsp;&nbsp;
+      <a href="https://twitter.com/ffechecs" target=_blank><img src=images/twitter.png /></a>
+  </div>
+  <div id="bandeau">
+    <img src="images/bandeau-ffe.png" alt="ffe" title="ffe" />
+  </div>
+<!-- end #bandeau -->
+  <ul id="nav"><li class="current"><a href="Default.aspx">Accueil</a></li><li><a href="#">Découvrir</a><ul><li><a target=_blank href="http://www.echecs.asso.fr/Actu.aspx?Ref=11983">Règles du Jeu</a></li><li><a href="Revues.aspx">Publications</a></li><li><a target=_blank href="http://zonedejeu.ffechecs.org">Zone de Jeux</a></li><li><a href="Default.aspx?Cat=41">Histoire des échecs</a></li><li><a target=_blank href="https://photos.ffechecs.org/">Albums photos</a></li><li><a target=_blank href="https://www.youtube.com/channel/UCn6wdVs-gSmZBJXSAWPzf7Q/videos">Vidéos</a></li><li><a target=_blank href="http://echecs.asso.fr/Default.aspx?Cat=60">Grands évènements</a></li></ul></li><li><a href="#">FFE</a><ul><li><a href="Default.aspx?Cat=12">FFE - Présentation</a></li><li><a href="Ligues.aspx">Ligues</a></li><li><a href="Comites.aspx">Comités</a></li><li><a href="Clubs.aspx">Clubs</a></li><li><a href="Default.aspx?Cat=14">Licences</a></li><li><a href="Joueurs.aspx">Licenciés</a></li><li><a href="Default.aspx?Cat=55">Les effectifs de la F.F.E.</a></li><li><a href="Default.aspx?Cat=13">Siège fédéral</a></li><li><a href="Default.aspx?Cat=35">Commissions-Directions</a></li><li><a href="Default.aspx?Cat=42">Infos fédérales</a></li><li><a href="Default.aspx?Cat=49">Appel à projets</a></li><li><a href="Default.aspx?Cat=54">Centenaire de la FFE</a></li><li><a href="Default.aspx?Cat=50">Contacts</a></li></ul></li><li><a href="#">Compétitions</a><ul><li><a href="Calendrier.aspx">Calendrier</a></li><li><a href="Equipes.aspx">Par équipes</a></li><li><a href="Tournois.aspx">Tournois homologués</a></li><li><a href="Default.aspx?Cat=21">Vos opens</a></li><li><a href="Default.aspx?Cat=16">Ch. France Jeunes</a></li><li><a href="Default.aspx?Cat=15">Ch. France</a></li><li><a href="Default.aspx?Cat=28">Challenge BLitz FFE</a></li><li><a href="Default.aspx?Cat=58">Elo Rapide FFE </a></li><li><a target=_blank href="http://ffechecs.org">Portail des événements</a></li></ul></li><li><a href="#">Secteurs</a><ul><li><a href="Default.aspx?Cat=8">Haut niveau et titrés</a></li><li><a href="Default.aspx?Cat=7">Secteur féminin</a></li><li><a target=_blank href="http://jeunes.ffechecs.fr">Jeunes</a></li><li><a target=_blank href="http://scolaires.ffechecs.fr">Scolaires</a></li><li><a target=_blank href="http://handi.ffechecs.fr">Handicap</a></li><li><a target=_blank href="https://dna.ffechecs.fr/">Arbitrage</a></li><li><a target=_blank href="http://entraineurs.ffechecs.fr">Entraînement</a></li><li><a href="Default.aspx?Cat=9">Discipline</a></li><li><a target=_blank href="https://ctf.ffechecs.fr/">Commission technique</a></li><li><a href="Default.aspx?Cat=19">Téléthon</a></li><li><a href="Default.aspx?Cat=23">Vos Stages</a></li></ul></li><li><a href="#">Documents</a><ul><li><a href="Default.aspx?Cat=17">Règlements</a></li><li><a href="Default.aspx?Cat=20">Comptes rendus</a></li><li><a href="Default.aspx?Cat=26">Documents Clubs</a></li><li><a href="Default.aspx?Cat=46">Ressources pédagogiques</a></li></ul></li><li><a href="#">Développement</a><ul><li><a href="Default.aspx?Cat=6">Formation</a></li><li><a href="Default.aspx?Cat=39">Nouveaux Publics</a></li><li><a href="Default.aspx?Cat=40">Semaines Thématiques</a></li><li><a href="Default.aspx?Cat=2">Annonces Emploi</a></li><li><a href="Default.aspx?Cat=24">Annonces Clubs</a></li><li><a target=_blank href="http://www.echecs.asso.fr/Default.aspx?Cat=57">Protection judiciaire de la Jeunesse</a></li><li><a href="Default.aspx?Cat=49">Appel à projets</a></li><li><a href="Default.aspx?Cat=59">Semaine au féminin</a></li></ul></li><li><a href="Default.aspx?Cat=36">Partenaires</a><ul><li><a target=_blank href="http://www.europe-echecs.com">Europe Echecs</a></li><li><a target=_blank href="http://www.profession-sport-loisirs.fr">Profession Sports & Loisirs</a></li><li><a target=_blank href="http://www.echiquierdelareussite.org">L'échiquier de la réussite</a></li><li><a target=_blank href="http://www.olibris.fr">Olibris</a></li><li><a target=_blank href="http://www.ccas.fr">C.C.A.S.</a></li><li><a target=_blank href="http://www.ucpa-vacances.com">U.C.P.A.</a></li><li><a target=_blank href="http://www.univ-lyon1.fr">U.C.B. Lyon I</a></li><li><a target=_blank href="http://www.chateauvillandry.fr">Le Château de Villandry</a></li><li><a target=_blank href="https://www.apf.asso.fr/">A.P.F.</a></li><li><a target=_blank href="http://echecs.asso.fr/actu.aspx?ref=10962">Nature et Découvertes</a></li><li><a target=_blank href="http://www.echecs.asso.fr/Actu.aspx?Ref=10975">D.P.J.J.</a></li><li><a target=_blank href="https://unss.org/">U.N.S.S.</a></li><li><a target=_blank href="https://usep.org/">U.S.E.P.</a></li><li><a target=_blank href="http://www.aefe.fr/">A.E.F.E.</a></li><li><a target=_blank href="http://www.ffse.fr/">F.F.S.E.</a></li><li><a target=_blank href="https://www.sportetcitoyennete.com/">Sport et Citoyenneté</a></li><li><a target=_blank href="http://www.femixsports.fr/">Femix'Sports</a></li></ul></li><li><a href="Actu.aspx?Ref=10771">Boutique</a></li></ul>
+<!-- end #menu -->
+  <div id="ctl00_divpub" class="pub">
+    <a id="ctl00_LinkBandeau" href="http://echecs.asso.fr/Actu.aspx?Ref=12132"><img src="images/Bandeau/masterclass_novembre_2019.jpg" border="0" /></a>
+  </div>
+<!-- end #pub -->
+</div>
+<!-- end #header -->
+<div id="page">
+  <div id="page-bgtop">
+    <div id="page-bgbtm">
+      
+
+<table id=TablePage cellSpacing=6 cellPadding=2 Class=page >
+  <tr>
+    <td>
+<div align=center><div align=center>
+<table width=800 cellpadding=2 cellspacing=0 style=border-collapse:collapse;>
+ <tr class=papi_titre>
+  <td colspan=8 align=center>Open Int. d'Echecs des Sables d'Olonne 2014<br />Liste des participants</td>
+ </tr>
+ <tr class=papi_liste_t>
+  <td class=papi_r>Nr</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>Nom</td>
+  <td class=papi_c>Elo</td>
+  <td class=papi_c>Cat.</td>
+  <td class=papi_c>Fede</td>
+  <td class=papi_c>Ligue</td>
+  <td class=papi_l>Club</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>1</td>
+  <td class=papi_r>g</td>
+  <td class=papi_l>AGREST Evgenij</td>
+  <td class=papi_r>2587&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/SWE.GIF height=15px /></td>
+  <td class=papi_c>CAZ</td>
+  <td class=papi_l>Echiquier Niçois</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>2</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>ALGARS Olle</td>
+  <td class=papi_r>2033&nbsp;F</td>
+  <td class=papi_c>VetM</td>
+  <td class=papi_c><img border=0 src=flags/SWE.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l></td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>3</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>ANDRIEU Philippe</td>
+  <td class=papi_r>1844&nbsp;F</td>
+  <td class=papi_c>VetM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>HNO</td>
+  <td class=papi_l>Saint Thomas - Le Havre - Echecs</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>4</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>ASHANINA Olga</td>
+  <td class=papi_r>2000&nbsp;F</td>
+  <td class=papi_c>SenF</td>
+  <td class=papi_c><img border=0 src=flags/RUS.GIF height=15px /></td>
+  <td class=papi_c>HNO</td>
+  <td class=papi_l>Bonsecours A.S.C.</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>5</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BARRE Laurent</td>
+  <td class=papi_r>1396&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Club d'Echecs Fontenay-le-Comte</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>6</td>
+  <td class=papi_r>m</td>
+  <td class=papi_l>BEDOUIN Xavier</td>
+  <td class=papi_r>2341&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PCH</td>
+  <td class=papi_l>Migne Echecs</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>7</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BERNARD Alien</td>
+  <td class=papi_r>2027&nbsp;F</td>
+  <td class=papi_c>CadM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Cercle d'échecs des Sables d'Olonne</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>8</td>
+  <td class=papi_r>f</td>
+  <td class=papi_l>BERTHELOT Yannick</td>
+  <td class=papi_r>2278&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Club d'Echecs de la Bruffière</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>9</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BODIN Lucas</td>
+  <td class=papi_r>1090&nbsp;N</td>
+  <td class=papi_c>BenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Cercle d'échecs des Sables d'Olonne</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>10</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BORDAIS Benjamin</td>
+  <td class=papi_r>2035&nbsp;F</td>
+  <td class=papi_c>CadM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>BNO</td>
+  <td class=papi_l>A.C.L. Orbec Echecs</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>11</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BORDAIS Dominique</td>
+  <td class=papi_r>1881&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>BNO</td>
+  <td class=papi_l>A.C.L. Orbec Echecs</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>12</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BOUDART Alain</td>
+  <td class=papi_r>1804&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>CVL</td>
+  <td class=papi_l>Echiquier Tourangeau</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>13</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BOUHIER Alain</td>
+  <td class=papi_r>1499&nbsp;E</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Club Echecs La Roche sur Yon</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>14</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BOUTEILLER Eleonore</td>
+  <td class=papi_r>1434&nbsp;F</td>
+  <td class=papi_c>SenF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Club Echecs La Roche sur Yon</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>15</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BROSSET Matthieu</td>
+  <td class=papi_r>1479&nbsp;F</td>
+  <td class=papi_c>CadM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Club Echecs La Roche sur Yon</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>16</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>BRUNET Jean-Paul</td>
+  <td class=papi_r>1480&nbsp;N</td>
+  <td class=papi_c>VetM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>IDF</td>
+  <td class=papi_l>Cavalier de La Reine Bourg-La-Reine</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>17</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>CADERON Michel</td>
+  <td class=papi_r>2027&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>BRE</td>
+  <td class=papi_l>Echiquier de l'ABC Pays de Vannes</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>18</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>CARBONNIER Arnaud</td>
+  <td class=papi_r>1619&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>BRG</td>
+  <td class=papi_l>Beaune Echecs</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>19</td>
+  <td class=papi_r>g</td>
+  <td class=papi_l>CHABANON Jean-Luc</td>
+  <td class=papi_r>2477&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>IDF</td>
+  <td class=papi_l>Cavalier Bleu Drancy</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>20</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>CLARACQ Victor</td>
+  <td class=papi_r>1099&nbsp;E</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PCH</td>
+  <td class=papi_l>Echiquier Niortais</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>21</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>COLSAET Sylvain</td>
+  <td class=papi_r>1920&nbsp;N</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>CVL</td>
+  <td class=papi_l>U.S. Orléans.Echecs</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>22</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DA SILVA Quentin</td>
+  <td class=papi_r>1994&nbsp;F</td>
+  <td class=papi_c>JunM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>ALS</td>
+  <td class=papi_l>C.E. Strasbourg</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>23</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DAVID Irene</td>
+  <td class=papi_r>1290&nbsp;F</td>
+  <td class=papi_c>PupF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>BRE</td>
+  <td class=papi_l>Echiquier Guingampais</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>24</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DAVID Marie</td>
+  <td class=papi_r>1052&nbsp;F</td>
+  <td class=papi_c>PouF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>BRE</td>
+  <td class=papi_l>Echiquier Guingampais</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>25</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DE COMBES Fernand</td>
+  <td class=papi_r>1829&nbsp;F</td>
+  <td class=papi_c>VetM</td>
+  <td class=papi_c><img border=0 src=flags/BEL.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l></td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>26</td>
+  <td class=papi_r>g</td>
+  <td class=papi_l>DEGRAEVE Jean-Marc</td>
+  <td class=papi_r>2579&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>ALS</td>
+  <td class=papi_l>Mulhouse Philidor</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>27</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DEGRAEVE Remy</td>
+  <td class=papi_r>1537&nbsp;F</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>CAZ</td>
+  <td class=papi_l>La Tour Hyéroise</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>28</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DEGRAEVE Thomas</td>
+  <td class=papi_r>1559&nbsp;F</td>
+  <td class=papi_c>BenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>CAZ</td>
+  <td class=papi_l>La Tour Hyéroise</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>29</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DELPLANQUE Guillaume</td>
+  <td class=papi_r>1549&nbsp;F</td>
+  <td class=papi_c>CadM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>FRC</td>
+  <td class=papi_l>Roi Blanc Montbeliard</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>30</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DESCHUYTENEER Lucien</td>
+  <td class=papi_r>1509&nbsp;F</td>
+  <td class=papi_c>VetM</td>
+  <td class=papi_c><img border=0 src=flags/BEL.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l></td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>31</td>
+  <td class=papi_r>f</td>
+  <td class=papi_l>DESLANDES Pascal</td>
+  <td class=papi_r>2291&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>IDF</td>
+  <td class=papi_l>Club d'Echecs du Vesinet</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>32</td>
+  <td class=papi_r>g</td>
+  <td class=papi_l>DJURIC Stefan</td>
+  <td class=papi_r>2393&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/SRB.GIF height=15px /></td>
+  <td class=papi_c>PIC</td>
+  <td class=papi_l>Echiquier Amiénois</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>33</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DORE Vincent</td>
+  <td class=papi_r>1240&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Club Echecs La Roche sur Yon</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>34</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DUBOIS Pierre</td>
+  <td class=papi_r>2124&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Carquefou Echecs</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>35</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DUGAST Thibault</td>
+  <td class=papi_r>1050&nbsp;N</td>
+  <td class=papi_c>CadM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Club Echecs La Roche sur Yon</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>36</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>DUTHIE Juliette</td>
+  <td class=papi_r>1430&nbsp;F</td>
+  <td class=papi_c>MinF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>IDF</td>
+  <td class=papi_l>Arcueil Chessland</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>37</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>FABRIS David</td>
+  <td class=papi_r>1597&nbsp;F</td>
+  <td class=papi_c>MinM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Parempuyre Echecs</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>38</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GALLOIS Jerome</td>
+  <td class=papi_r>1948&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Club Echecs La Roche sur Yon</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>39</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GAPONENKO Violeta</td>
+  <td class=papi_r>1751&nbsp;F</td>
+  <td class=papi_c>MinF</td>
+  <td class=papi_c><img border=0 src=flags/UKR.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l></td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>40</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GAUDIN Eric</td>
+  <td class=papi_r>1849&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>IDF</td>
+  <td class=papi_l>Club d'Echecs de l'Arpajonnais</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>41</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GAUTIER Michel</td>
+  <td class=papi_r>1618&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Trignac Echecs</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>42</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GENET Xavier</td>
+  <td class=papi_r>1636&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>FRC</td>
+  <td class=papi_l>Roi Blanc Montbeliard</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>43</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GIPOULOUX Laurent</td>
+  <td class=papi_r>1699&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>MPY</td>
+  <td class=papi_l>Echiquier Montagne Noire</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>44</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GIRAUD Thierry</td>
+  <td class=papi_r>1842&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Trignac Echecs</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>45</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GIROD Bernard</td>
+  <td class=papi_r>1480&nbsp;N</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>BRE</td>
+  <td class=papi_l>Echiquier Quévenois</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>46</td>
+  <td class=papi_r>g</td>
+  <td class=papi_l>GREENFELD Alon</td>
+  <td class=papi_r>2540&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/ISR.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l></td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>47</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GUILLEVIC Julien</td>
+  <td class=papi_r>1891&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>IDF</td>
+  <td class=papi_l>Tour Blanche Echecs</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>48</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GUYON Nicolas</td>
+  <td class=papi_r>1146&nbsp;F</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Club Echecs La Roche sur Yon</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>49</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>GUYON Sophie</td>
+  <td class=papi_r>1525&nbsp;F</td>
+  <td class=papi_c>MinF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Club Echecs La Roche sur Yon</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>50</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>HAZARABEDIAN Guy</td>
+  <td class=papi_r>1381&nbsp;F</td>
+  <td class=papi_c>VetM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>CRS</td>
+  <td class=papi_l>Balagna Chess Club</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>51</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>HENRY Florent</td>
+  <td class=papi_r>1867&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Cercle d'échecs des Sables d'Olonne</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>52</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>HUBERT Raphael</td>
+  <td class=papi_r>2025&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>CVL</td>
+  <td class=papi_l>Echiquier Tourangeau</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>53</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>IMPEROR Amelie</td>
+  <td class=papi_r>1576&nbsp;F</td>
+  <td class=papi_c>BenF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>IDF</td>
+  <td class=papi_l>GIF-CC2-Echecs</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>54</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>IMPEROR Lorene</td>
+  <td class=papi_r>1865&nbsp;F</td>
+  <td class=papi_c>MinF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>IDF</td>
+  <td class=papi_l>GIF-CC2-Echecs</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>55</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>JOLY Yves</td>
+  <td class=papi_r>1440&nbsp;N</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Cercle d'Echecs Castelbriantais</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>56</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>KELLER Christophe</td>
+  <td class=papi_r>2140&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>IDF</td>
+  <td class=papi_l>Clichy-Echecs-92</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>57</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>KORNGOLD Alexandre</td>
+  <td class=papi_r>1210&nbsp;N</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>IDF</td>
+  <td class=papi_l>Alekhine Noisy Le Grand</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>58</td>
+  <td class=papi_r>g</td>
+  <td class=papi_l>KUNIN Vitaly</td>
+  <td class=papi_r>2567&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/GER.GIF height=15px /></td>
+  <td class=papi_c>ALS</td>
+  <td class=papi_l>Club d'Echecs de Mundolsheim</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>59</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>L'HERITIER Boris</td>
+  <td class=papi_r>1814&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>FRC</td>
+  <td class=papi_l>Roi Blanc Montbeliard</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>60</td>
+  <td class=papi_r>g</td>
+  <td class=papi_l>LAGARDE Maxime</td>
+  <td class=papi_r>2521&nbsp;F</td>
+  <td class=papi_c>JunM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>IDF</td>
+  <td class=papi_l>Clichy-Echecs-92</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>61</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LAMBERT Thomas</td>
+  <td class=papi_r>1667&nbsp;F</td>
+  <td class=papi_c>MinM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Club d'Echecs Fontenay-le-Comte</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>62</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LAPERSONNE Patrick</td>
+  <td class=papi_r>1501&nbsp;F</td>
+  <td class=papi_c>VetM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Club Echecs La Roche sur Yon</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>63</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LAPLANCHE Denis</td>
+  <td class=papi_r>2160&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>BNO</td>
+  <td class=papi_l>Caen Alekhine</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>64</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LARDIERE Antoine</td>
+  <td class=papi_r>1340&nbsp;N</td>
+  <td class=papi_c>CadM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Club Echecs La Roche sur Yon</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>65</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LATAPIE Frederic</td>
+  <td class=papi_r>1571&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>CVL</td>
+  <td class=papi_l>Azay le Rideau</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>66</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LE GLOANEC Jacques</td>
+  <td class=papi_r>1420&nbsp;F</td>
+  <td class=papi_c>VetM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AQU</td>
+  <td class=papi_l>Dax  Echiquier Dacquois</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>67</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LE PEN Steven</td>
+  <td class=papi_r>1984&nbsp;F</td>
+  <td class=papi_c>CadM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Club d'Echecs de la Bruffière</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>68</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LE ROC'H Daniel</td>
+  <td class=papi_r>1712&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>DSA</td>
+  <td class=papi_l>Club d'Echecs de Val d'Isere</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>69</td>
+  <td class=papi_r>g</td>
+  <td class=papi_l>LE ROUX Jean-Pierre</td>
+  <td class=papi_r>2560&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>ALS</td>
+  <td class=papi_l>Bischwiller</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>70</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LEBEDEV Stepan</td>
+  <td class=papi_r>1480&nbsp;N</td>
+  <td class=papi_c>CadM</td>
+  <td class=papi_c><img border=0 src=flags/RUS.GIF height=15px /></td>
+  <td class=papi_c>FRC</td>
+  <td class=papi_l>Roi Blanc Montbeliard</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>71</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LETENDRE Gaspar</td>
+  <td class=papi_r>1420&nbsp;N</td>
+  <td class=papi_c>BenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Cercle d'échecs des Sables d'Olonne</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>72</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LIVET Florian</td>
+  <td class=papi_r>1724&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Club d'Echecs de la Bruffière</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>73</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LUCAS Arthur</td>
+  <td class=papi_r>1642&nbsp;F</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Echiquier Hilairois</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>74</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>LUCAS Charles</td>
+  <td class=papi_r>1610&nbsp;N</td>
+  <td class=papi_c>MinM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Club Echecs La Roche sur Yon</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>75</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MAILLOT Gregory</td>
+  <td class=papi_r>1882&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>IDF</td>
+  <td class=papi_l>Lutèce Echecs</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>76</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MALEKI Nicolas</td>
+  <td class=papi_r>2121&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>CVL</td>
+  <td class=papi_l>Echiquier Tourangeau</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>77</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MALOBERTI David</td>
+  <td class=papi_r>2037&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Cercle d'échecs des Sables d'Olonne</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>78</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MARIETTE Lucas</td>
+  <td class=papi_r>1611&nbsp;F</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PCH</td>
+  <td class=papi_l>Echiquier Rochefortais</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>79</td>
+  <td class=papi_r>g</td>
+  <td class=papi_l>MEIJERS Viesturs</td>
+  <td class=papi_r>2475&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/LAT.GIF height=15px /></td>
+  <td class=papi_c>PIC</td>
+  <td class=papi_l>Echiquier Amiénois</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>80</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MUTZEL Annabelle</td>
+  <td class=papi_r>1482&nbsp;F</td>
+  <td class=papi_c>BenF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>IDF</td>
+  <td class=papi_l>Villepreux "Le Fou du Roi"</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>81</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>MUTZEL Joseph</td>
+  <td class=papi_r>1290&nbsp;F</td>
+  <td class=papi_c>VetM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>IDF</td>
+  <td class=papi_l>Villepreux "Le Fou du Roi"</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>82</td>
+  <td class=papi_r>g</td>
+  <td class=papi_l>OKHOTNIK Vladimir</td>
+  <td class=papi_r>2396&nbsp;F</td>
+  <td class=papi_c>VetM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>CHA</td>
+  <td class=papi_l>L'Echiquier Chalonnais</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>83</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>ORPHELIN Mickael</td>
+  <td class=papi_r>1433&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>BRE</td>
+  <td class=papi_l>Echiquier Briochin</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>84</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PILLE Edouard</td>
+  <td class=papi_r>1735&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Cercle d'Echecs de Nantes</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>85</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PLATANOVA Diana</td>
+  <td class=papi_r>1699&nbsp;E</td>
+  <td class=papi_c>MinF</td>
+  <td class=papi_c><img border=0 src=flags/RUS.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l></td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>86</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>POULAIN Yves</td>
+  <td class=papi_r>1786&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Echiquier Nazairien</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>87</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PRISER Gwendal</td>
+  <td class=papi_r>1473&nbsp;F</td>
+  <td class=papi_c>CadM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>BRE</td>
+  <td class=papi_l>Echiquier Tregastel Trégor</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>88</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PRISER Patrick</td>
+  <td class=papi_r>1919&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>BRE</td>
+  <td class=papi_l>Echiquier Tregastel Trégor</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>89</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PRISER Valerie</td>
+  <td class=papi_r>1401&nbsp;F</td>
+  <td class=papi_c>SenF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>BRE</td>
+  <td class=papi_l>Echiquier Tregastel Trégor</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>90</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>PRISER Victor</td>
+  <td class=papi_r>1603&nbsp;F</td>
+  <td class=papi_c>MinM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>BRE</td>
+  <td class=papi_l>Echiquier Tregastel Trégor</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>91</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>RABOUAN Jean-Francois</td>
+  <td class=papi_r>1892&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>L'Echiquier Angevin</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>92</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>RALLE Pierre</td>
+  <td class=papi_r>2116&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>IDF</td>
+  <td class=papi_l>Issy-Les-Moulineaux</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>93</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>RAMONELL Jacques</td>
+  <td class=papi_r>1508&nbsp;F</td>
+  <td class=papi_c>VetM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>AUV</td>
+  <td class=papi_l>Cercle des Echecs de Vichy</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>94</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>RENAULT Jean-Pierre</td>
+  <td class=papi_r>1798&nbsp;F</td>
+  <td class=papi_c>VetM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>BNO</td>
+  <td class=papi_l>Agneaux Saint-Lô</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>95</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>REUBREZ Christophe</td>
+  <td class=papi_r>1794&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>IDF</td>
+  <td class=papi_l>Lutèce Echecs</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>96</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>RISTIC Rodolphe</td>
+  <td class=papi_r>1774&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Club Echecs La Roche sur Yon</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>97</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>ROGER Mehdi</td>
+  <td class=papi_r>2198&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>NPC</td>
+  <td class=papi_l>Lille Université Club Echiquier du Nord</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>98</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>ROUSSEL Antoine</td>
+  <td class=papi_r>1185&nbsp;F</td>
+  <td class=papi_c>PupM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Carquefou Echecs</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>99</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>ROUSSEL Simon</td>
+  <td class=papi_r>1716&nbsp;F</td>
+  <td class=papi_c>BenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Carquefou Echecs</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>100</td>
+  <td class=papi_r>f</td>
+  <td class=papi_l>SAADA Julien</td>
+  <td class=papi_r>2378&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PCH</td>
+  <td class=papi_l>Migne Echecs</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>101</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>SCHLOSSER Guillaume</td>
+  <td class=papi_r>1713&nbsp;F</td>
+  <td class=papi_c>CadM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Cercle d'échecs des Sables d'Olonne</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>102</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>SERRE Jean-Philippe</td>
+  <td class=papi_r>1744&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>LIM</td>
+  <td class=papi_l>LEC Echiquier Limousin</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>103</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>SIONKOWSKI Thaddee</td>
+  <td class=papi_r>1270&nbsp;N</td>
+  <td class=papi_c>VetM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Cercle d'échecs des Sables d'Olonne</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>104</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>SLEPSOVA Aleksandra</td>
+  <td class=papi_r>1499&nbsp;E</td>
+  <td class=papi_c>SenF</td>
+  <td class=papi_c><img border=0 src=flags/RUS.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l></td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>105</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>SLEPSOVA Svetlana</td>
+  <td class=papi_r>1499&nbsp;E</td>
+  <td class=papi_c>SenF</td>
+  <td class=papi_c><img border=0 src=flags/RUS.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l></td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>106</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>SOYER Jean-Yves</td>
+  <td class=papi_r>2080&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Cercle d'échecs des Sables d'Olonne</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>107</td>
+  <td class=papi_r>g</td>
+  <td class=papi_l>SRIRAM Jha</td>
+  <td class=papi_r>2375&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/IND.GIF height=15px /></td>
+  <td class=papi_c></td>
+  <td class=papi_l></td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>108</td>
+  <td class=papi_r>g</td>
+  <td class=papi_l>SUMETS Andrey</td>
+  <td class=papi_r>2632&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/UKR.GIF height=15px /></td>
+  <td class=papi_c>LYO</td>
+  <td class=papi_l>Lyon Olympique Echecs</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>109</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>SYRE Patrick</td>
+  <td class=papi_r>1499&nbsp;E</td>
+  <td class=papi_c>VetM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Cercle d'échecs des Sables d'Olonne</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>110</td>
+  <td class=papi_r>m</td>
+  <td class=papi_l>TIRARD Hugo</td>
+  <td class=papi_r>2439&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>HNO</td>
+  <td class=papi_l>A.L.B.C.S. Grand Quevilly</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>111</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>TROGNON Philippe</td>
+  <td class=papi_r>1461&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>IDF</td>
+  <td class=papi_l>Le Cavalier Fou Melun</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>112</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>UGUEN Yann</td>
+  <td class=papi_r>1510&nbsp;N</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Club d'Echecs de Montaigu</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>113</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>VALENTIN Rene</td>
+  <td class=papi_r>2163&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>CVL</td>
+  <td class=papi_l>Pion du Roi - Lèves</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>114</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>VENET Patrice</td>
+  <td class=papi_r>1342&nbsp;F</td>
+  <td class=papi_c>SenM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PCH</td>
+  <td class=papi_l>Club d'Echecs de Cognac</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>115</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>VENET Valentin</td>
+  <td class=papi_r>1586&nbsp;F</td>
+  <td class=papi_c>CadM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PCH</td>
+  <td class=papi_l>Club d'Echecs de Cognac</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>116</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>VERNET Solene</td>
+  <td class=papi_r>1752&nbsp;F</td>
+  <td class=papi_c>MinF</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PRO</td>
+  <td class=papi_l>Echiquier Orangeois</td>
+ </tr>
+ <tr class=papi_liste_f>
+  <td class=papi_r>117</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>VIEL Jean-Marc</td>
+  <td class=papi_r>1692&nbsp;F</td>
+  <td class=papi_c>VetM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>PDL</td>
+  <td class=papi_l>Cercle d'échecs des Sables d'Olonne</td>
+ </tr>
+ <tr class=papi_liste_c>
+  <td class=papi_r>118</td>
+  <td class=papi_r>&nbsp;</td>
+  <td class=papi_l>ZYSKIND Alexandre</td>
+  <td class=papi_r>1681&nbsp;F</td>
+  <td class=papi_c>VetM</td>
+  <td class=papi_c><img border=0 src=flags/FRA.GIF height=15px /></td>
+  <td class=papi_c>IDF</td>
+  <td class=papi_l>Tour Blanche Echecs</td>
+ </tr>
+</table>
+</div>
+</div>
+<div align=center>
+  <p>
+    
+  </p>
+</div>
+    </td>
+  </tr>
+</table>
+
+
+    </div>
+  </div>
+</div>
+<!-- end #page -->
+<div id="ctl00_divfooter">
+<div id="footer">
+  <p>
+    <strong>Copyright  © 2015 FFE | 
+    <a href="http://www.echecs.asso.fr/Ag/Mentions_legales_FFE.pdf">Mentions légales</a> |
+    <a href="http://www.echecs.asso.fr/Ag/RGPD.pdf">Protection des données</a></strong><br>
+    Fédération Française des Echecs | <span id="ctl00_LabelAdresse">6 rue de l'Eglise | 92600 ASNIERES SUR SEINE</span> <br>
+    tél : <span id="ctl00_LabelTel">01 39 44 65 80</span> | fax : 01 30 69 93 15 | webmestre : 
+    <a href="mailto:erick.mouret@echecs.asso.fr">erick.mouret@echecs.asso.fr</a>
+  </p><br>
+  <p id="logo-ffe"><img src="images/logo-ffe.png" /></p>
+</div>
+</div>
+</body>
+</html>
+
